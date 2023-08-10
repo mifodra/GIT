@@ -1,0 +1,43 @@
+- Mostrar todas as configs: git config --global --list
+- Mostrar nome de usuário: git config --global user.name
+- Mudar nome de usuário: git config --global user.name "Nome_do_Usuario"
+- Mostrar e-mail do usuário: git config --global user.email
+- Mudar e-mail do usuário: git config --global user.email Email_do_Usuario
+
+--------------------------------------------------------------------------------------------------
+
+- Mostrar URL do repositório GIT: git remote show origin / git remote -v
+- Mudar URL do repositório GIT: git remote set-url origin URL_nova
+
+- Clonar um repositório: git clone http_ou_ssh_do_repo
+- Inicializar um repositório: git init
+
+- Ver status dos arquivos: git status / git status -s
+
+- Trackear arquivos (Stage): git add Nome_do_arquivo.extensão / git add . 
+- Unstage arquivos: git rm --cached Nome_do_arquivo.extensão
+
+- Comitar arquivos: git commit -m "Mensagem"
+- Histórico de commits: git log / git log --oneline
+- Voltar pra commit anterior: git checkout Hash_do_commit
+    - Voltar para onde estava: git checkout Nome_da_branch
+- Remover commit: git revert Hash_do_commit
+    - !!! git reset Hash_do_commit / git reset Hash_do_commit --hard !!!
+
+- Mergear (Fundir branch): git merge Nome_da_branch
+
+- Enviar para o repositório remoto: git push 
+    - git push http_ou_ssh_do_repo Nome_da_branch
+- Puxar do repositório remoto: git pull
+
+--------------------------------------------------------------------------------------------------
+
+- Trazer lista de branch: git branch
+- Criar branch: git branch Nome_da_branch
+- Mudar de branch: git checkout Nome_da_branch
+    -- git checkout -b Nome_da_branch
+- Deletar branch: git branch -d Nome_da_branch / git branch -D Nome_da_branch
+
+--------------------------------------------------------------------------------------------------
+
+- Limpa terminal: clear
